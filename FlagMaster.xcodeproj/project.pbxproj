@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		759CA45A2BF505E3009BA232 /* Bandera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CA4592BF505E3009BA232 /* Bandera.swift */; };
+		759CA45C2BF507C2009BA232 /* RepositorioBanderas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CA45B2BF507C2009BA232 /* RepositorioBanderas.swift */; };
+		759CA45E2BF51045009BA232 /* BanderasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CA45D2BF51045009BA232 /* BanderasViewModel.swift */; };
+		759CA4602BF51DB1009BA232 /* ViewControllerJugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CA45F2BF51DB1009BA232 /* ViewControllerJugar.swift */; };
 		75D123332BF4D1080003F1D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D123322BF4D1080003F1D6 /* AppDelegate.swift */; };
 		75D123352BF4D1080003F1D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D123342BF4D1080003F1D6 /* SceneDelegate.swift */; };
 		75D123372BF4D1080003F1D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D123362BF4D1080003F1D6 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		759CA4592BF505E3009BA232 /* Bandera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bandera.swift; sourceTree = "<group>"; };
+		759CA45B2BF507C2009BA232 /* RepositorioBanderas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioBanderas.swift; sourceTree = "<group>"; };
+		759CA45D2BF51045009BA232 /* BanderasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanderasViewModel.swift; sourceTree = "<group>"; };
+		759CA45F2BF51DB1009BA232 /* ViewControllerJugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJugar.swift; sourceTree = "<group>"; };
 		75D1232F2BF4D1080003F1D6 /* FlagMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D123322BF4D1080003F1D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75D123342BF4D1080003F1D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 				75D1233B2BF4D10A0003F1D6 /* Assets.xcassets */,
 				75D1233D2BF4D10A0003F1D6 /* LaunchScreen.storyboard */,
 				75D123402BF4D10A0003F1D6 /* Info.plist */,
+				759CA4592BF505E3009BA232 /* Bandera.swift */,
+				759CA45B2BF507C2009BA232 /* RepositorioBanderas.swift */,
+				759CA45D2BF51045009BA232 /* BanderasViewModel.swift */,
+				759CA45F2BF51DB1009BA232 /* ViewControllerJugar.swift */,
 			);
 			path = FlagMaster;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759CA45C2BF507C2009BA232 /* RepositorioBanderas.swift in Sources */,
 				75D123372BF4D1080003F1D6 /* ViewController.swift in Sources */,
+				759CA45A2BF505E3009BA232 /* Bandera.swift in Sources */,
 				75D123332BF4D1080003F1D6 /* AppDelegate.swift in Sources */,
+				759CA45E2BF51045009BA232 /* BanderasViewModel.swift in Sources */,
 				75D123352BF4D1080003F1D6 /* SceneDelegate.swift in Sources */,
+				759CA4602BF51DB1009BA232 /* ViewControllerJugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
