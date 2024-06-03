@@ -20,10 +20,75 @@ class ViewControllerJugar: UIViewController {
     @IBOutlet weak var boton_4: UIButton!
     @IBOutlet weak var resultado: UILabel!
     
-    //var imagen = 1
+    @IBOutlet weak var siguiente: UIButton!
+    
+    @IBOutlet weak var puntuacion: UILabel!
+    
+    
+    var nvl = 1
+    var aciertos = 0
+    var fallos = 0
+    var puntos = 0
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        generaTodo()
+        
+    }
+    
+    
+    @IBAction func seleccionaPais(_ sender: UIButton) {
+        let punto: Int? = Int(puntuacion.text!)
+        
+        var id = banderaImageView.tag
+        if sender.tag == id {
+            resultado.text = "País correcto"
+            resultado.textColor = UIColor.green
+            resultado.backgroundColor = UIColor.white
+            aciertos += 1
+            puntos += punto!
+        } else {
+            resultado.text = "País erroneo"
+            resultado.textColor = UIColor.red
+            resultado.backgroundColor = UIColor.white
+            fallos += 1
+            puntos -= punto!
+        }
+        
+        boton_1.isEnabled = false
+        boton_2.isEnabled = false
+        boton_3.isEnabled = false
+        boton_4.isEnabled = false
+        if nvl < 5{
+            siguiente.isEnabled = true
+        } else {
+            resultado.textColor = UIColor.black
+            resultado.backgroundColor = UIColor.opaqueSeparator
+            let mensaje = "Acertaste: \(aciertos) y fallaste \(fallos). Obtuviste \(puntos) puntos."
+            resultado.text = mensaje
+        }
+    }
+    
+    
+    @IBAction func siguienteBandera(_ sender: UIButton) {
+        nvl += 1
+        generaTodo()
+        resultado.backgroundColor = UIColor.opaqueSeparator
+    }
+    
+    func generaTodo(){
+        puntuacion.isHidden = true
+        
+        resultado.textColor = UIColor.black
+        siguiente.isEnabled = false
+        
+        boton_1.isEnabled = true
+        boton_2.isEnabled = true
+        boton_3.isEnabled = true
+        boton_4.isEnabled = true
+        
+        resultado.text = ""
         
         var identificador = 5
         
@@ -40,14 +105,14 @@ class ViewControllerJugar: UIViewController {
             banderaImageView.tag = identificador
         }
         
-        
+        let puntosBandera = bandera!.values.first?.puntosBandera
+        puntuacion.text = "\(puntosBandera!)"
         
         if var resBandera = bandera!.values.first?.bandera{
             
             generaBotones(viewModel, bandera: bandera!.values.first!)
             
             if var nomBandera = bandera?.values.first?.nBandera {
-                //generaBotones(viewModel, nBandera: nomBandera)
             } else {
                 print("ERROR AL PONER EL NOMBRE")
             }
@@ -57,33 +122,7 @@ class ViewControllerJugar: UIViewController {
                 print("ERROR, NO SE PUDO ACCEDER A LA BANDERA \(resBandera)")
             }
         }
-        
     }
-    
-    
-    @IBAction func seleccionaPais(_ sender: UIButton) {
-        var id = banderaImageView.tag
-        if sender.tag == id {
-            resultado.text = "País correcto"
-        } else {
-            resultado.text = "La cagaste burlancaster"
-        }
-        
-        boton_1.isEnabled = false
-        boton_2.isEnabled = false
-        boton_3.isEnabled = false
-        boton_4.isEnabled = false
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     func generaBotones(_ viewModel : BanderasViewModel, bandera : Bandera){
