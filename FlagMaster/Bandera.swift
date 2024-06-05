@@ -11,8 +11,8 @@ import Foundation
 class Bandera {
     
     var id : Int = 1
-    var bandera : String = "idBandera"
-    var nBandera : String = "Nombre"
+    var bandera : String
+    var nBandera : String
     var puntosBandera : Int = 2
     
     init(id : Int, bandera: String, nBandera : String, puntosBandera: Int) {

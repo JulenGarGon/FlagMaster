@@ -36,6 +36,7 @@ class BanderasViewModel {
     }
     
     func obtenerAllBanderas() -> [Int:Bandera]{
+        repositorio.crearBanderas()
         return repositorio.banderas
     }
     
