@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7518082E2C0F6C8600AD4008 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518082D2C0F6C8600AD4008 /* TableViewController.swift */; };
+		7598E7032C175C7A000A75F8 /* InstruccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598E7022C175C7A000A75F8 /* InstruccionesViewController.swift */; };
 		759CA45A2BF505E3009BA232 /* Bandera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CA4592BF505E3009BA232 /* Bandera.swift */; };
 		759CA45C2BF507C2009BA232 /* RepositorioBanderas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CA45B2BF507C2009BA232 /* RepositorioBanderas.swift */; };
 		759CA45E2BF51045009BA232 /* BanderasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759CA45D2BF51045009BA232 /* BanderasViewModel.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		7518082D2C0F6C8600AD4008 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7598E7022C175C7A000A75F8 /* InstruccionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstruccionesViewController.swift; sourceTree = "<group>"; };
 		759CA4592BF505E3009BA232 /* Bandera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bandera.swift; sourceTree = "<group>"; };
 		759CA45B2BF507C2009BA232 /* RepositorioBanderas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioBanderas.swift; sourceTree = "<group>"; };
 		759CA45D2BF51045009BA232 /* BanderasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanderasViewModel.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				759CA45D2BF51045009BA232 /* BanderasViewModel.swift */,
 				759CA45F2BF51DB1009BA232 /* ViewControllerJugar.swift */,
 				7518082D2C0F6C8600AD4008 /* TableViewController.swift */,
+				7598E7022C175C7A000A75F8 /* InstruccionesViewController.swift */,
 			);
 			path = FlagMaster;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				75D123332BF4D1080003F1D6 /* AppDelegate.swift in Sources */,
 				759CA45E2BF51045009BA232 /* BanderasViewModel.swift in Sources */,
 				75D123352BF4D1080003F1D6 /* SceneDelegate.swift in Sources */,
+				7598E7032C175C7A000A75F8 /* InstruccionesViewController.swift in Sources */,
 				759CA4602BF51DB1009BA232 /* ViewControllerJugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

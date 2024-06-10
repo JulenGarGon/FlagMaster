@@ -238,21 +238,33 @@
             </objects>
             <point key="canvasLocation" x="-150.38167938931298" y="740.84507042253529"/>
         </scene>
-        <!--View Controller-->
+        <!--Instrucciones View Controller-->
         <scene sceneID="JWW-NZ-yjt">
             <objects>
-                <viewController id="ulB-bS-i1h" sceneMemberID="viewController">
+                <viewController id="ulB-bS-i1h" customClass="InstruccionesViewController" customModule="FlagMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dho-96-9rz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Z-Uz-ceu">
+                                <rect key="frame" x="16" y="103" width="361" height="706"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FvP-r9-U84"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="6xt-8r-TAV"/>
+                    <connections>
+                        <outlet property="texto" destination="w9Z-Uz-ceu" id="wvM-mp-TNg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9Y-Qk-F1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952" y="741"/>
+            <point key="canvasLocation" x="951.90839694656484" y="740.84507042253529"/>
         </scene>
     </scenes>
     <resources>
